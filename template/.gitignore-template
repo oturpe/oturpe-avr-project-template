@@ -1,0 +1,12 @@
+# Compiled source location
+target/
+
+# KiCad backup files
+hardware/*-save.pro
+hardware/*.bak
+hardware/*-save.kicad_pcb
+hardware/*.bck
+
+# KiCad temporary files
+hardware/*.000
+hardware/*.net

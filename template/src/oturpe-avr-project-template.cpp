@@ -4,6 +4,8 @@
 // Email: n.n@example.com
 // Date: 1900-01-01
 
+#include "AvrUtils.h"
+
 #include "config.h"
 
 #include <avr/io.h>
