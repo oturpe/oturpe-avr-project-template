@@ -32,10 +32,15 @@ int main() {
     INDICATOR_DATA_DIR |= BV(INDICATOR_DATA_DIR_PIN);
 
     while (true) {
-        if (indicatorCounter % INDICATOR_HALF_PERIOD == 0) {
+        uint16_t indicatorCounter = 0;
+
+        if (indicatorCounter == INDICATOR_HALF_PERIOD) {
             toggleIndicator();
+            indicatorCounter = 0;
         }
-        indicatorCounter++;
+        else {
+            indicatorCounter++;
+        }
 
         _delay_ms(LOOP_DELAY);
     }
