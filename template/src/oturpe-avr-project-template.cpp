@@ -22,7 +22,7 @@ void toggleIndicator() {
         INDICATOR_DATA &= ~BV(INDICATOR_DATA_PIN);
     }
     else {
-    INDICATOR_DATA |= BV(INDICATOR_DATA_PIN);
+        INDICATOR_DATA |= BV(INDICATOR_DATA_PIN);
     }
 
     lit = !lit;
