@@ -1,12 +1,14 @@
 ## Directory structure
 
 1.  *hardware* contains schematic and printed circuit board layout of
-    device hardware.
+    device hardware. These are created using [KiCad][kicad].
 2.  *hardware*/*production-files* is the target for production files generated
     by KiCad. No files saved there are stored to source control.
 3.  *src* contains firmware source code
 4.  *target* contains compiled firmware and intermediate files. No files saved
     there are stored to source control.
+
+[kicad]: http://kicad-pcb.org/
 
 ## Build system
 
