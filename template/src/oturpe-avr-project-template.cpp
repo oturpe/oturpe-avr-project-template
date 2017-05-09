@@ -32,8 +32,6 @@ int main() {
     INDICATOR_DATA_DIR |= BV(INDICATOR_DATA_DIR_PIN);
 
     while (true) {
-        uint16_t indicatorCounter = 0;
-
         if (indicatorCounter == INDICATOR_HALF_PERIOD) {
             toggleIndicator();
             indicatorCounter = 0;

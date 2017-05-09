@@ -21,5 +21,8 @@ You need to have [avrdude][avrdude] installed to build.
     the avr datasheet.)
 3.  Compile and upload firmware from *src* directory by running *build* script.
 
+Note that depending on configuration, the *port* variable may need to be
+changed after connecting and disconnecting the programmer.
+
 [avrdude]: http://www.nongnu.org/avrdude/
 [engbedded]: http://www.engbedded.com/fusecalc/
