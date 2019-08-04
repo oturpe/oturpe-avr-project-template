@@ -1,0 +1,268 @@
+EESchema Schematic File Version 4
+LIBS:oturpe-avr-project-template-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5D56F180
+P 900 1500
+F 0 "J?" H 792 1175 50  0000 C CNN
+F 1 "Power_in" H 792 1266 50  0000 C CNN
+F 2 "" H 900 1500 50  0001 C CNN
+F 3 "~" H 900 1500 50  0001 C CNN
+	1    900  1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D56FCFC
+P 1250 1400
+F 0 "D?" H 1250 1184 50  0000 C CNN
+F 1 "D" H 1250 1275 50  0000 C CNN
+F 2 "" H 1250 1400 50  0001 C CNN
+F 3 "~" H 1250 1400 50  0001 C CNN
+	1    1250 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D570322
+P 1700 1550
+F 0 "C?" H 1450 1600 50  0000 L CNN
+F 1 "330 nF" H 1300 1500 50  0000 L CNN
+F 2 "" H 1738 1400 50  0001 C CNN
+F 3 "~" H 1700 1550 50  0001 C CNN
+	1    1700 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM7805_TO220 U?
+U 1 1 5D570DBC
+P 2100 1400
+F 0 "U?" H 2100 1642 50  0000 C CNN
+F 1 "LM7805" H 2100 1551 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2100 1625 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 2100 1350 50  0001 C CNN
+	1    2100 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D571AE9
+P 2500 1550
+F 0 "C?" H 2615 1596 50  0000 L CNN
+F 1 "100 nF" H 2615 1505 50  0000 L CNN
+F 2 "" H 2538 1400 50  0001 C CNN
+F 3 "~" H 2500 1550 50  0001 C CNN
+	1    2500 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1700 2100 1700
+Wire Wire Line
+	2100 1700 1700 1700
+Connection ~ 2100 1700
+Wire Wire Line
+	2400 1400 2500 1400
+$Comp
+L power:+5V #PWR?
+U 1 1 5D5723FD
+P 2500 1400
+F 0 "#PWR?" H 2500 1250 50  0001 C CNN
+F 1 "+5V" H 2515 1573 50  0000 C CNN
+F 2 "" H 2500 1400 50  0001 C CNN
+F 3 "" H 2500 1400 50  0001 C CNN
+	1    2500 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2500 1400
+$Comp
+L power:+12V #PWR?
+U 1 1 5D572617
+P 1700 1400
+F 0 "#PWR?" H 1700 1250 50  0001 C CNN
+F 1 "+12V" H 1715 1573 50  0000 C CNN
+F 2 "" H 1700 1400 50  0001 C CNN
+F 3 "" H 1700 1400 50  0001 C CNN
+	1    1700 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D572870
+P 2100 1700
+F 0 "#PWR?" H 2100 1450 50  0001 C CNN
+F 1 "GND" H 2105 1527 50  0000 C CNN
+F 2 "" H 2100 1700 50  0001 C CNN
+F 3 "" H 2100 1700 50  0001 C CNN
+	1    2100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D572AC0
+P 1100 1500
+F 0 "#PWR?" H 1100 1250 50  0001 C CNN
+F 1 "GND" H 1105 1327 50  0000 C CNN
+F 2 "" H 1100 1500 50  0001 C CNN
+F 3 "" H 1100 1500 50  0001 C CNN
+	1    1100 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AVR-ISP-6 J?
+U 1 1 5D573651
+P 7600 3200
+F 0 "J?" H 7320 3204 50  0000 R CNN
+F 1 "AVR-ISP-6" H 7320 3295 50  0000 R CNN
+F 2 "" V 7350 3250 50  0001 C CNN
+F 3 " ~" H 6325 2650 50  0001 C CNN
+	1    7600 3200
+	-1   0    0    1   
+$EndComp
+Entry Wire Line
+	6800 3500 6900 3400
+Entry Wire Line
+	6800 3400 6900 3300
+Entry Wire Line
+	6800 3300 6900 3200
+Entry Wire Line
+	6800 3200 6900 3100
+Wire Wire Line
+	6900 3100 7200 3100
+Wire Wire Line
+	6900 3200 7200 3200
+Wire Wire Line
+	6900 3300 7200 3300
+Wire Wire Line
+	6900 3400 7200 3400
+Text Label 6950 3100 0    50   ~ 0
+~RST
+Text Label 6950 3200 0    50   ~ 0
+SCK
+Text Label 6950 3300 0    50   ~ 0
+MOSI
+Text Label 6950 3400 0    50   ~ 0
+MISO
+Wire Bus Line
+	6800 3600 6350 3600
+$Comp
+L power:GND #PWR?
+U 1 1 5D5778F3
+P 7950 2800
+F 0 "#PWR?" H 7950 2550 50  0001 C CNN
+F 1 "GND" H 7955 2627 50  0000 C CNN
+F 2 "" H 7950 2800 50  0001 C CNN
+F 3 "" H 7950 2800 50  0001 C CNN
+	1    7950 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D577A24
+P 7950 3700
+F 0 "#PWR?" H 7950 3550 50  0001 C CNN
+F 1 "+5V" H 7965 3873 50  0000 C CNN
+F 2 "" H 7950 3700 50  0001 C CNN
+F 3 "" H 7950 3700 50  0001 C CNN
+	1    7950 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3700 7950 3700
+Wire Wire Line
+	7950 2800 7700 2800
+$Comp
+L Device:LED D?
+U 1 1 5D578F20
+P 6900 4400
+F 0 "D?" H 6893 4145 50  0000 C CNN
+F 1 "LED" H 6893 4236 50  0000 C CNN
+F 2 "" H 6900 4400 50  0001 C CNN
+F 3 "~" H 6900 4400 50  0001 C CNN
+	1    6900 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D57954E
+P 6600 4400
+F 0 "R?" V 6393 4400 50  0000 C CNN
+F 1 "1 kΩ" V 6484 4400 50  0000 C CNN
+F 2 "" V 6530 4400 50  0001 C CNN
+F 3 "~" H 6600 4400 50  0001 C CNN
+	1    6600 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D472732
+P 7050 4400
+F 0 "#PWR?" H 7050 4150 50  0001 C CNN
+F 1 "GND" H 7055 4227 50  0000 C CNN
+F 2 "" H 7050 4400 50  0001 C CNN
+F 3 "" H 7050 4400 50  0001 C CNN
+	1    7050 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D4724D9
+P 4500 2500
+F 0 "#PWR?" H 4500 2350 50  0001 C CNN
+F 1 "+5V" H 4515 2673 50  0000 C CNN
+F 2 "" H 4500 2500 50  0001 C CNN
+F 3 "" H 4500 2500 50  0001 C CNN
+	1    4500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D472AB2
+P 4500 2650
+F 0 "C?" H 4385 2604 50  0000 R CNN
+F 1 "100 nF" H 4385 2695 50  0000 R CNN
+F 2 "" H 4538 2500 50  0001 C CNN
+F 3 "~" H 4500 2650 50  0001 C CNN
+	1    4500 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D4769E5
+P 4500 2800
+F 0 "#PWR?" H 4500 2550 50  0001 C CNN
+F 1 "GND" H 4505 2627 50  0000 C CNN
+F 2 "" H 4500 2800 50  0001 C CNN
+F 3 "" H 4500 2800 50  0001 C CNN
+	1    4500 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 1700 1400
+Wire Wire Line
+	1700 1400 1800 1400
+Wire Bus Line
+	6800 3200 6800 3600
+Wire Wire Line
+	1400 1400 1700 1400
+Text Notes 1350 1000 0    50   ~ 0
+Board power supply
+Text Notes 4700 2300 0    50   ~ 0
+Microcontroller\npower supply
+Text Notes 7150 2650 0    50   ~ 0
+ISP programming
+Text Notes 6650 4050 0    50   ~ 0
+Indicator blinker
+$EndSCHEMATC
