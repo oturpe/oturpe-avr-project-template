@@ -12,6 +12,7 @@
 #define INDICATOR_DATA_DIR_PIN DDB0
 #define INDICATOR_DATA PORTB
 #define INDICATOR_DATA_PIN PORTB0
+#define VALVE_MIDDLE_DATA_REF B
 
 // Half length of one complete indicator period. In other words, the time the
 // indicator spends on and off. Given in units of LOOP_DELAY.
