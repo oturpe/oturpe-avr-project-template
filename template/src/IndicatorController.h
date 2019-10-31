@@ -14,7 +14,6 @@ public:
     ///    Port where blinker light is connected.
     /// \param pin
     ///    Pin where blinker light is connected.
-    ///
     /// \param halfPeriod
     ///    Blink half period in clock steps.
     IndicatorController(Port port, uint8_t pin, uint16_t halfPeriod);
